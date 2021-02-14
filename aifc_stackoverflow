@@ -1,0 +1,18 @@
+A lot of audio programs, such as *Audacity*, support encoding files as AIFF ([Audio Interchange File Format][1], developed by *Apple Inc.*).
+
+However, I need specifically an AIFF file that has been *compressed with ima4*, making it an AIFC file.
+
+The internet seems to be nearly clueless about AIFC and ima4. "convert to AIFC" (with quotes) yields exactly 0 results on Google (3M for MP3, 90K for WAV, 45K for FLAC, ...).
+
+Possible solutions:
+
+ - **ffmppg**. I know `ffmpeg -i wavefile.wav -f aiff wavefile.aiff` converts to AIFF but I can't figure out how to specify the compression algorithm.
+ - **afconvert**. According to [here][2], we can use `afconvert -f AIFC -d ima4 [file]`. But this is a Mac-only program and I only have access to Windows and Linux Mint machines.
+ - **afftools**. [See here][3]. This strangely seems to be a Fedora-only program, and I once again can't find anything on it on Google (if it even does what I want).
+ - **Adobe Audition**. [See here][4]. Once again I do not own this paid-for software.
+
+
+  [1]: https://en.wikipedia.org/wiki/Audio_Interchange_File_Format
+  [2]: http://alexanderwong.me/post/67897096418/convert-wav-to-compressed-aifc-for-ios
+  [3]: https://www.linuxquestions.org/questions/linux-software-2/how-to-install-afconvert-on-fedora-888841/
+  [4]: https://forums.adobe.com/thread/2244942

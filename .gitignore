@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+
+*.SRF
+*.zip
+*.mp3
+*.aifc
+*.pre_aifc
+*.pre_graphic
+qnumbers*/
+tmp_*/
+output_*/
+input_custom_mp3s_*/
